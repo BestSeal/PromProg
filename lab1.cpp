@@ -5,23 +5,15 @@
 using namespace std;
 
 // Выделение памяти и инициализация 2д массива
-int** Generate2DArray(int N, int M, int** from = nullptr, int ishift = 0, int jshift = 0)
+int** Generate2DArray(int N, int M)
 {
 	int** out = new int* [N];
-	if (from != nullptr)
-		for (int i = 0; i < N; i++)
-		{
-			out[i] = new int[M];
-			for (int j = 0; j < M; j++)
-				out[i][j] = from[i + ishift][j + jshift];
-		}
-	else
-		for (int i = 0; i < N; i++)
-		{
-			out[i] = new int[M];
-			for (int j = 0; j < M; j++)
-				out[i][j] = 0;
-		}
+	for (int i = 0; i < N; i++)
+	{
+		out[i] = new int[M];
+		for (int j = 0; j < M; j++)
+			out[i][j] = 0;
+	}
 	return out;
 }
 
