@@ -1,4 +1,7 @@
-# PromProg
+# ЛР работа №2
+
+* lab_unittest.cpp - код тестов
+* eauation.cpp - функция, которую необходимо протестировать. Изменен только ввод(6 аргументов) и вывод(tuple) 
 
 ## Процент покрытия функции solve:
 ![coverage](coverage_percent.png)
